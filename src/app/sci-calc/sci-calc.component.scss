@@ -1,0 +1,22 @@
+.Calculator {
+    margin-top: 10;
+    margin-right: 10;
+    margin-left: 10;
+    float: left; 
+    padding-left: 10;
+    padding-right: 10;
+    padding-bottom: 15;
+    border-style: solid;
+    border-radius: 25px;
+    text-align:center;
+    position:relative;
+    background-color: lightsalmon;
+}
+
+h4 {
+    border: dotted; 
+    display: inline-flex;
+    padding: 5;
+    margin-top: 10;
+    color: blue;
+}

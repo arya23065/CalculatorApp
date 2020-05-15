@@ -1,0 +1,53 @@
+<h4>{{title}}</h4>
+<table>
+  <tr> 
+      <td colspan="6"><input type="text" #calcDisplay value={{equation}} onkeypress="return event.charCode >= 48 && event.charCode <= 57" style="width:100%;"> </td> 
+  </tr> 
+  <tr> 
+      <td><input type="button" class="calcButton" value="1" (click)="calcClick('1', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="2" (click)="calcClick('2', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="3" (click)="calcClick('3', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="C" (click)="clearCalc(calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="DEL" (click)="backspaceCalc(calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="=" (click)="evaluateCalc(calcDisplay.value)"> </td> 
+  </tr> 
+  <tr> 
+      <td><input type="button" class="calcButton" value="4" (click)="calcClick('4', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="5" (click)="calcClick('5', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="6" (click)="calcClick('6', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="-" (click)="calcClick('-', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="%" (click)="calcClick('%', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="cos" (click)="calcClick('Math.cos(', calcDisplay.value)"> </td> 
+  </tr>   
+  <tr> 
+      <td><input type="button" class="calcButton" value="7" (click)="calcClick('7', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="8" (click)="calcClick('8', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="9" (click)="calcClick('9', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="*" (click)="calcClick('*', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="!" (click)="calcClick('!', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="sin" (click)="calcClick('Math.sin(', calcDisplay.value)"> </td> 
+  </tr> 
+  <tr> 
+      <td><input type="button" class="calcButton" value="." (click)="calcClick('.', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="0" (click)="calcClick('0', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="," (click)="calcClick(',', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="+" (click)="calcClick('+', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="/" (click)="calcClick('/', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="tan" (click)="calcClick('Math.tan(', calcDisplay.value)"> </td> 
+  </tr> 
+  <tr>
+      <td><input type="button" class="calcButton" value="e" (click)="calcClick('Math.E', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="&#960;" (click)="calcClick('Math.PI', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="^" (click)="calcClick('Math.pow(', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="(" (click)="calcClick('(', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value=")" (click)="calcClick(')', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="log" (click)="calcClick('Math.log(', calcDisplay.value)"> </td>              
+  <tr>
+      <td><input type="button" class="calcButton" value="&radic;" (click)="calcClick('Math.sqrt(', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="ln2" (click)="calcClick('Math.LN2', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="ln10" (click)="calcClick('Math.Log10', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="l2e" (click)="calcClick('Math.LOG2E', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="l10e" (click)="calcClick('Math.log10', calcDisplay.value)"> </td> 
+      <td><input type="button" class="calcButton" value="exp" (click)="calcClick('Math.exp(', calcDisplay.value)"> </td> 
+  </tr> 
+</table> 
