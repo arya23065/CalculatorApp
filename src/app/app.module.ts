@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SciCalcComponent } from './sci-calc/sci-calc.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NbThemeModule, NbLayoutModule, NbButtonModule, NbInputModule, } from '@nebular/theme';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
 
 @NgModule({
   declarations: [
@@ -12,7 +15,13 @@ import { SciCalcComponent } from './sci-calc/sci-calc.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    NbThemeModule.forRoot({ name: 'dark', }),
+    NbLayoutModule,
+    NbEvaIconsModule,
+    NbButtonModule,
+    NbInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
